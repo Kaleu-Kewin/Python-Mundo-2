@@ -1,8 +1,8 @@
 # verifica palindromo
 
-# precisei usar gpt nesse, não sabia como fazer
+# sofri um pouco pra fazer esse
 
-palavra = input('Verificar palavra palindromo: ')
+palavra = input('Verificar palavra palindromo: ').replace(' ', '').lower()
 tamanho = len(palavra)
 
 for i in range(tamanho // 2):
