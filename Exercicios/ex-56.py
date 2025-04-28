@@ -1,14 +1,12 @@
 # Nome, idade e sexo de 4 pessoa + Mostrar a média das idades, o homem mais velho e quantas mulheres têm menos de 20 anos
 
 pessoas = []
-
-soma_idades = 0
-
 mais_velho = {'nome: ': '', 'idade': 0}
 menos_20 = 0
+soma_idades = 0
 
 for i in range(4):
-    dados = input('Digite Nome, Idade e Sexo (F/M), separados por vírgulas: ').split(',')
+    dados = input('Digite Nome, Idade e Sexo (F/M), separados por vírgula: ').split(',')
     
     nome  = dados[0].strip()
     idade = int(dados[1].strip())
@@ -28,10 +26,9 @@ for i in range(4):
         mais_velho['nome'] = nome
         mais_velho['idade'] = idade    
     
-    if sexo == 'F' and idade < 20:
-    
+    if sexo == 'F' and idade < 20:    
         menos_20 = menos_20 + 1
-    
+        
     media_idades = soma_idades / 4
 
 print(f'\nMédia das idades: {media_idades} anos')
